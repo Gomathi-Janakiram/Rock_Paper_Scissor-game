@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="body">
+        <section class="score-card">
+            <div class="user-score score">
+                <h1>0</h1>
+                <p>Your Score</p>
+            </div>
+            <div class="title" id="gameResult" style="height: 111px;">
+                <h3>First to 5 wins</h3>
+            </div>
+            <div class="computer-score score">
+                <h1>0</h1>
+                <p>Computer Score</p>
+            </div>
+        </section>
+    
+        <section class="content-card">
+            <div class="rock content" onclick="onUserClick('rock')">
+                <h4>ROCK</h4>
+                <div class="outer-container">
+                    <div class="img-container">
+                        <img src="images/rock.png" width="100px">
+                    </div>
+                </div>
+            </div>
+            <div class="paper content" onclick="onUserClick('paper')">
+                <h4>Paper</h4>
+                <div class="outer-container">
+                    <div class="img-container">
+                        <img src="images/paper.png" width="100px">
+                    </div>
+                </div>
+            </div>
+            <div class="scissor content" onclick="onUserClick('scissor')">
+                <h4>Scissor</h4>
+                <div class="outer-container">
+                    <div class="img-container">
+                        <img src="images/scissor.png" width="100px">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
