@@ -115,7 +115,9 @@ const showBanner = (title, usersProp, computersProp) => {
         userScore = 0;
         computerScore = 0;
         updateUserScore();
-        updateComputerScore()
+        updateComputerScore();
+        gameResultMessage.textContent = "First to 5 wins";
+        playAgainButton.style.display = "none"
     })
 
     if (userScore == 5) {
