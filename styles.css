@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke
+
+}
+
+.body {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+/* SCORE CARD */
+.score-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.score, .title {
+    flex: 15%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.user-score {
+    color: #00A1CE;
+}
+
+.computer-score {
+    color: #16B17D;
+}
+
+.title {
+    flex: 75%;
+    /* padding: 4.4%; */
+    font-size: 21px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENT CARD */
+
+.content-card {
+    max-width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-container, .outer-container, .container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: 1px 1px black;
+}
+
+.outer-container {
+    width: 180px;
+    height: 180px;
+    border: none;
+}
+
+.container {
+    width: 115px;
+    height: 115px;
+    border: none;
+    margin: 0 auto;
+}
+
+
+.outer-container:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.content:hover h4 {
+    text-decoration: underline;
+    text-shadow: 1px 1px black;
+}
+
+.rock .outer-container, .rock .container {
+    background: linear-gradient(to bottom, #FC8E6D, #B61332);
+}
+
+.paper .outer-container, .paper .container {
+    background: linear-gradient(to bottom, #77DBE4, #145D80);
+}
+
+.scissor .outer-container, .scissor .container {
+    background: linear-gradient(to bottom, #7AF2A9, #0D6050)
+}
+
+.button {
+    margin: 11px;
+    padding: 5px;
+    font-size: 14px;
+    width: 30%;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+.resultHeading {
+    font-weight: bold;
+    font-size: 22px;
+    text-shadow: 1px 1px grey;
+}
+
+.resultMessage {
+    font-size: 20px;
+}
